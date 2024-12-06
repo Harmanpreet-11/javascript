@@ -29,8 +29,9 @@
 
 // console.log(Math.random()*10); // random values 
 
-const min = 10 
-const max = 20
+const min = 10 ;
+const max = 20;
 
-console.log(Math.floor(Math.random() * max - min + 1)) + min)  // range depend on max and min this is the formula . Here we are getting any random number between 11 - 20
+console.log(Math.floor(Math.random() * max - min + 1) + min ) 
 
+// range depend on max and min this is the formula . Here we are getting any random number between 1 - 20
