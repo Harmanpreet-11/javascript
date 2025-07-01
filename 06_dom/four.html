@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmanpreet Singh | DOM </title>
+</head>
+<body style="background-color: #212121; color:#ffff">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+    <script>
+        function addLanguage (langName){ //traversing through all the way down to create a last innerHtml
+           const li = document.createElement('li');
+           li.innerHTML = `${langName}`
+           document.querySelector('.language').appendChild(li)
+        }
+
+        addLanguage("python")
+        addLanguage("html")
+
+        function optiLanguage(langName){   //more optimized way
+            const li = document.createElement('li') //created li
+            li.appendChild(document.createTextNode(langName)) //inerted textode directly and then append it to the parent
+            document.querySelector('.language').appendChild(li)
+        }
+
+        optiLanguage("Ruby")
+
+        //edit any value
+
+        const secondLang = document.querySelector('li:nth-child(2)')
+        const newLi = document.createTextNode('li')
+        newLi.textContent = "go lang";
+        secondLang.replaceWith( newLi);
+
+        const firstLang = document.querySelector('li:first-child')
+        firstLang.outerHTML = '<li>PHP</li>'
+        const lastLang = document.querySelector('li:last-child')
+        lastLang.remove()
+    </script>
+</html>

@@ -13,5 +13,11 @@
     console.log(div);
     div.className = 'div'
     div.id = Math.round(Math.random() *10 +1)
+    div.setAttribute("title", "title generated")
+    div.style.backgroundColor= "green"
+    div.style.padding = "10px" 
+    const addText = document.createTextNode("Harmanpreet Singh")  //creating a node for the div , or a text to put inside the div
+    div.appendChild(addText) //inserting the node inside the div or adding the children of the div parent class
+    document.body.appendChild(div) //actually appending it to the html body , reflecting the changes in the webpage
 </script>
 </html>
