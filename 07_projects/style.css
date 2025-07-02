@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.btn{
+    text-align: center;
+    font-size: x-large;
+}
+.canvas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Individual colors based on ID */
+#grey {
+  background-color: grey;
+}
+
+#white {
+  background-color: white;
+  border: 1px solid #999; /* White on white may be hard to see, so add a border */
+}
+
+#blue {
+  background-color: blue;
+}
+
+#yellow {
+  background-color: yellow;
+}
