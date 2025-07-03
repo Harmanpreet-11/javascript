@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project 2 - BMI Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    input {
+      padding: 10px;
+      margin: 10px;
+      width: 200px;
+    }
+    .btn {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #results {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav><strong>PROJECT 2</strong></nav>
+  <h1>BMI CALCULATOR</h1>
+
+  <form id="bmi-form">
+    <h3>Height (cm)</h3>
+    <input type="number" id="height" placeholder="Enter height in cm" required />
+
+    <h3>Weight (kg)</h3>
+    <input type="number" id="weight" placeholder="Enter weight in kg" required />
+
+    <br><br>
+    <button type="submit" class="btn">Calculate</button>
+    <div id="results"></div>
+  </form>
+
+  <script src="script.js"></script>
+  </body>
+</html>
