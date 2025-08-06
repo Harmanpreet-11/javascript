@@ -10,14 +10,15 @@
 </body>
 <script>
         
-    //getAttribute() -- setAttribute() -- hasAttribute()
+    //getAttribute() -- setAttribute() -- hasAttribute() -- removeAttribute()
 
     let inputBox = document.getElementById("username");
     // // console.log(inputBox.getAttribute("placeholder")); // display the value in the attribute 
     // inputBox.setAttribute("class", "input");
     // console.log(inputBox); // added using the setAttribute
-
-    console.log(inputBox.hasAttribute("id"));
+    // console.log(inputBox.hasAttribute("id"));
+    inputBox.removeAttribute("placeholder")
+    console.log(inputBox);
     
 </script>
 </html>
