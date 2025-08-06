@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodewithHaru</title>
+</head>
+
+<body>
+        <!-- example 1 -->
+    <!-- <div class="title">  the empty space between the div and paragraph is considered as a text node 
+        <p>Welcome to Javascript Course 1</p>
+        <p class="second">Welcome to Javascript Course 2</p>
+        <p>Welcome to Javascript Course 3</p>
+        <p>Welcome to Javascript Course 4</p>
+    </div> -->
+
+
+    <!-- example 2  -->
+    <ul id="menu">
+        <li>Home</li>
+        <li>About </li>
+        <li>BLog</li>
+        <li>Project</li>
+    </ul>
+
+    <script>
+
+        // firstChild -- childNodes -- next and previous Siblings -- createElement and appendChild
+
+        // let parent = document.querySelector(".title")
+        // // console.log(parent.firstElementChild);
+        // // console.log(parent.childNodes);
+        // let second = document.querySelector(".second")
+        // // console.log(second.nextElementSibling); // previous and next sibling
+        // let div = document.createElement("div") // created the element using createElement
+        // div.innerHTML = "<p>Hello World</p>"; //created a paragraph inside the div created
+        // div.id = "title" // to give id to the div created 
+        // div.className = "title" // to add class to the div 
+        // // document.body.appendChild(div); //to add div in the web page
+        // // console.log(div); 
+
+
+
+        //INNERHTML - TEXTCONTENT - APPENDCHILD
+
+        // let menu = document.getElementById("menu");
+        // let list = document.createElement("li")
+        // list.innerHTML = "Contact";
+        // menu.appendChild(list);
+        // console.log(menu.textContent); //only display the text inside the html tag ( it displays all the textContent even if hidden)
+        // console.log(menu.innerText); // innerText will only display visible text because it follows the CSS 
+        // menu.textContent = "Hello";
+        // menu.innerHTML = "<h1>Hello</h1>";  // accept html tag and add the text on webpage following the html tag 
+        // menu.textContent =  "<h1>Hello</h1>"; // will not accept the html and tag and display as it is with the tags 
+    
+        
+        //AFTER METHOD  -- insertAdjacentHTML -- append -- prepend -- after -- before
+
+        // let menu = document.getElementById("menu");
+        // menu.after(node)
+        // parent.append(Node or String ) // append will accept multiple nodes and accept string also 
+        // parent.prepend(newNodes)
+        // parent.insertAdjacentHTML ( positionName, text);
+        // menu.insertAdjacentHTML("afterbegin","<li>Contact</li>")
+
+
+        //REPLACE CHILD METHOD -- cloneNode
+
+        // parentNode.replaceChild(newChild, oldChild)
+        // let newnode = menu.cloneNode(true); // by default it is false it will only clone the ul here and if true it will clone everything inside including li 
+        // console.log(newnode);
+        
+
+        //REMOVE CHILD method
+
+        // let menu = document.getElementById("menu");
+        // menu.removeChild(menu.firstElementChild) // remove the last child in our case its project 
+
+
+        // INSERT BEFORE METHOD 
+
+        // let menu = document.getElementById("menu");
+        // menu.insertBefore(newNode, menu.firstChild) // to insert befor a node 
+
+</script>
+</body>
+
+</html>

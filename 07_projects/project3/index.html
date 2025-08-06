@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .navbar{
+        background-color: grey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    #btn{
+        display:flex;
+        border:transparent;
+        border-radius: 20px;
+        outline: none;
+        gap: 5px;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+    #clock{
+        background-color: orange;
+    }
+</style>
+<body>
+    <nav class="navbar">
+        <h1><button id="btn">HOME</button></h1>
+        <h1><button id="btn">YOUTUBE</button></h1>
+    </nav>
+    <div class="center">
+       <div id = "banner"><span> Digital Clock </span></div>
+        <div id="clock"></div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>

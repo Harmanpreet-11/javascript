@@ -1,0 +1,19 @@
+
+body{
+    padding: 30px;
+    background-color: rgb(176, 173, 173);
+}
+p{
+    font-size: 25px;
+    font-weight:bolder;
+}
+button{
+    font-size: medium;
+    font-weight: bold;
+    padding: 30px;
+    background-color: beige;
+    color: black;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid;
+}
