@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
     <title>Attributes</title>
+    <style>
+        input{
+            background-color: yellow; 
+            border: none;
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
 
-    <input type="text" id="username" placeholder="username"
-    style="background-color: yellow; border: none;"
-    >
+    <input type="text" id="username" placeholder="username">
     
 </body>
 <script>
     let inputBox = document.getElementById("username")
-    console.log(inputBox.style.backgroundColor);
-    inputBox.style.padding = "40px";
-    inputBox.style.fontSize = "40px";
-    inputBox.style.fontWeight = "bold";
-    console.log(inputBox);
+    // console.log(inputBox.style.backgroundColor);
+    // inputBox.style.padding = "40px";
+    // inputBox.style.fontSize = "40px";
+    // inputBox.style.fontWeight = "bold";
+    // console.log(inputBox);
     
 
     // inputBox.style.cssText = "width:200px"; // overwrite the existing css , completely remove the old one and add the new one 
     // console.log(inputBox);
 
-    inputBox.style.cssText += "border-radius:50px; width:200px" // we use += concatenate to use existing and new css without overwriting 
-    console.log(inputBox);
+    // inputBox.style.cssText += "border-radius:50px; width:200px" // we use += concatenate to use existing and new css without overwriting 
+    // console.log(inputBox);
     
+    // window.getComputedStyle(element.pseudoElement) syntax for getting styles
+    console.log(window.getComputedStyle(inputBox).width);
+    
+
     
     
 </script>

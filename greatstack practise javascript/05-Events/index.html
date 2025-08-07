@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CodeWithHaru</title>
+    <style>
+        button{
+            padding: 20px 50px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Event bubbling is when the event starts from the most specific element and flows towards the least specific element , in our case it is from the button to the div then to the body then head and then the document
+     
+    -------------------------------------------
+
+    When it is vice versa that is from least to the specific then it is known as Event Capturing -->
+
+    <div id="container">
+        <button id="btn"> Click Here </button> 
+        <!-- this keyword inside the event handler refers to the target element -->
+    </div>
+</body>
+
+<script>
+
+    // function displayMsg() {
+    //     console.log("Button Clicked");
+        
+    // }
+
+    let btn = document.getElementById("btn")
+    // console.log(btn); 
+    // btn.onclick = function(){
+    //     console.log('Button Clicked');
+        
+    // }
+    // btn.onclick = null;
+
+    // addEventListener(event, function) syntax for addEventListener
+
+    // btn.addEventListener("click", function(){
+    //     console.log("hello from scriptJS");
+        
+    // })
+
+    function displayMsg () {
+        console.log('Button Clicked!');
+        
+    }
+
+    btn.addEventListener("click",displayMsg) 
+    //named external function is passed
+
+    btn.removeEventListener("click", displayMsg) // to remove the event listener
+
+</script>
+
+</html>
+
+
+
+<!-- click -> event handler -> onClick -->
+
+<!-- mousemove event - event fires repeatedly when you move the mouse cursor around the element
+mouse down event -  when you press mouse button on the element it fires the event
+mouseup event - when the mouse button is released from the element it fires the event
+mouseoever event -  mouse cursor move from outside to inside of the boundary of the element it occurs
+mouseout - mouse cursor is over an element and 
+
+
+keydown
+keyup
+keypress
+
+
+scroll
+-->

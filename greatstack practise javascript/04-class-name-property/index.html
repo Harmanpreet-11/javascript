@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeWithHaru</title>
+</head>
+<body>
+        <h1 id="title" class="main message">Harmanpreet Singh</h1>
+</body>
+<script>
+
+    let title = document.getElementById("title");
+    // title.className = "new" // overwrite because it is not concatenated
+    // title.className +=  " new" // after concatenation
+    // title.classList.add("new","class") // we can add multiple classes using classList
+    // title.classList.remove("class"); // to remove any class , multiple classes also 
+    // title.classList.replace("existing", "new") // we can replace any current class with a new class , in this syntax
+    // console.log(title.classList);
+    // console.log(title.classList.toggle("main")) // toggle will add new class if not present and remove the class if present 
+    console.log(title.classList.contains("main")); // return true or false if the class is present or not 
+    
+
+</script>
+</html>
